@@ -1,9 +1,3 @@
-body{
-    background-color: black;
-    color: aliceblue;
-    font-family: 'Poppins', sans-serif;
-}
-
 
 .name{
     margin-left: 20px;
@@ -17,13 +11,12 @@ body{
 }
 
 .rambo2{
-    height: 600px;
-    width: 700px;
-    margin-right: 50px ;
+    height: 550px;
+    width: 600px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+    margin-top: 80px;
+    margin-right: 50px;
+    border-radius: 30px;
 }
 
 .intro{
@@ -43,7 +36,7 @@ body{
 }
 
 .hed{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
 }
 
@@ -58,7 +51,8 @@ body{
 }
 
 .A-btn:hover,
-.B-btn:hover{
+.B-btn:hover,
+.c-btn:hover{
     transform: translateY(-5px);
     transition: 0.3s;
 }
@@ -107,8 +101,9 @@ body{
 
 .about{
     display: flex;
-    margin-right: 100px;
-    text-align: end;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     line-height: 1.2;
     gap: 30px;
@@ -118,41 +113,34 @@ body{
 .a-m{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 45px;
     font-weight: bolder;
 }
 
-.a-t{
-    display: flex;
-    gap: 14px;
-    align-items: end;
-    text-align: end;
-    justify-content: end;
-    margin-right: 200px;
-    font-size: 50px;
-    font-weight: bolder;
-    font-family: 'Inter', sans-serif;
-    margin-top: 60px;
-}
-
-.a-t span{
-    color: #fd0000;
-}
-
 .a-h{
-    margin-top: 50px;
+    display: flex;
+    margin-top: 30px;
     margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.span{
+.a-h span{
     color: red;
 }
 
 .a-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 30px;
     font-size: 20PX;
+
 }
-
-
 
 .rambo3img{
     display: flex;
@@ -177,58 +165,41 @@ body{
     height: auto;
 }
 
-.journey-box{
+.journey-box,
+.expertise-box {
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: start;
-    padding: 16px 30px;
-    margin-top: 150px;
-    width: fit-content;
-    margin-left: 110px;
-    background-color: transparent;
-    border-radius: 6px;
-    border: 2px solid red;
-}
-
-.journey{
-    color: red;
-}
-
-.expertise-box{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: end;
-    padding: 19px 35px;
+    padding: 20px 30px;
     margin-top: 50px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 100px;
-    background-color: transparent;
-    border-radius: 6px;
-    border: 2px solid red;
-}
-
-.expertise{
-    color: red;
-}
-
-.journey-box,
-.expertise-box{
     width: 380px;
-    min-height: 180px;
-    animation: fadeIn 1s ease;
-    border-color: #fd0000;
+    height: 220px; 
+    background-color: rgba(128, 128, 128, 0.144);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 0, 0, 0.377);
     box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    animation: fadeIn 1s ease;
+    transition: transform 0.3s;
+    box-sizing: border-box;
+}
+
+.journey,.expertise{
+    color: #fd0000;
+}
+
+.j-ebox{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
 
 .journey-box:hover,
-.expertise-box:hover{
+.expertise-box:hover {
     transform: translateY(-5px);
-    transition: 0.3s;
 }
-
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -246,7 +217,8 @@ body{
     align-items: center;
     font-size: 60px;
     font-weight: bolder;
-    margin-top: 50px;
+    margin-top: 100px;
+
 }
 
 .skill-box{
@@ -258,7 +230,7 @@ body{
     padding: 19px 35px;
     background: rgba(255,255,255,0.05);
     border: 3px solid rgba(255,0,0,0.3);
-    box-shadow: 0 0 20px #ff0000, 0 0 25px #ff0000;
+    box-shadow: 0 0 20px #ff0000d2, 0 0 25px #ff00008e;
     width: 180px;
     height: 180px;
 }
@@ -283,13 +255,13 @@ body{
 
 }
 
-.title{
+.title,.title2{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 30px;
-    font-size: 45px;
+    font-size: 35px;
     gap: 10px;
 }
 
@@ -303,7 +275,7 @@ body{
     align-items: center;
     font-size: 60px;
     font-weight: bolder;
-    margin-top: 50px;
+    margin-top: 100px;
     gap: 10px;
 }
 
@@ -333,7 +305,7 @@ body{
 .project-box{
     display: flex;
     margin-top: 100px;
-    border: 3px solid #fd0000;
+    border: 3px solid #fd000094;
     width: fit-content;
     margin-left: 50px;
     background-color: rgba(128, 128, 128, 0.089);
@@ -350,15 +322,30 @@ body{
 .p-des{
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
     margin-top: 30px;
-    margin-right: 10px;
+    margin-left: 60px;
+
 }
 
 .portaltitle{
     display: flex;
     margin-left: 80px;
     margin-bottom: 40px;
+}
+
+.c-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin-top: 50px;
+    align-items: center;
+    color: #ffff;
+    background-color: rgba(255, 0, 0, 0.548);
+    border-color: rgba(255, 0, 0, 0.781);
 }
 
 .project-p{
@@ -415,6 +402,16 @@ body{
     transform: scale(1.2);
 }
 
+.Education{
+    width: max-content;
+    margin: 60px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.3);
+}
+
 .heading-education{
     display: flex;
     font-size: 45px;
@@ -435,6 +432,7 @@ body{
     text-align: start;
     padding: 16px 30px;
     margin-top: 50px;
+    margin-bottom: 50px;
     width: fit-content;
     margin-left: 110px;
     background-color: transparent;
@@ -452,16 +450,13 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 100px;
+    margin-right: 50px;
     gap: 30px;
-    font-size: 30px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .title2{
     display: flex;
@@ -509,3 +504,398 @@ html{
     scroll-behavior: smooth;
 }
 
+.contact-box{
+    display: flex;
+}
+
+.user-box{
+    display: flex;
+    background:transparent;
+    margin-right: 50px;
+    padding: 40px;
+    width: 350px;
+    border:2px solid red;
+    border-radius:10px;
+    outline:none;
+    box-shadow:0 0 10px rgba(255,0,0,0.5);
+}
+
+.usermesg{
+    display: flex;
+    background:transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white;
+    border:2px solid red;
+    border-radius:10px;
+    padding:12px 15px;
+    font-size:18px;
+    outline:none;
+    box-shadow:0 0 10px rgba(255,0,0,0.5);
+}
+
+.footer{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #050505;
+  background-image:radial-gradient(circle at 15% 20%, rgba(255, 0, 0, 0.25) 0%, transparent 20%),radial-gradient(circle at 85% 75%, rgba(255, 0, 0, 0.18) 0%, transparent 25%),linear-gradient(rgba(255, 0, 0, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 0, 0, 0.08) 1px, transparent 1px);
+  background-size:auto,auto,60px 60px,60px 60px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .ramboimg {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .intro {
+        width: 100%;
+        min-height: auto;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .intro h2 {
+        font-size: 22px;
+    }
+
+    .hed {
+        font-size: 27px;
+    }
+
+    .i-p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .rambo2 {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .logo {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn-grp {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .A-btn,
+    .B-btn,
+    .c-btn {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+
+    .a-m {
+        font-size: 38px;
+        margin-top: 50px;
+    }
+
+    .a-h {
+        font-size: 22px;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 20px 15px;
+    }
+
+    .a-p {
+        margin: 15px 20px;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+    .j-ebox {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin: 30px 15px;
+    }
+
+    .journey-box,
+    .expertise-box {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        min-height: 200px;
+        padding: 20px;
+        margin: 0;
+    }
+
+
+    .myskill {
+        font-size: 40px;
+        margin-top: 70px;
+    }
+
+    .title,
+    .title2 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .skill-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+
+    .skill-box {
+        width: 100%;
+        max-width: 160px;
+        height: 160px;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .html {
+        width: 65px;
+        height: 65px;
+    }
+
+
+    .myproject {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .project-box {
+        flex-direction: column;
+        width: calc(100% - 30px);
+        margin: 50px auto;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .portalimg {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .projectimg,
+    .portfolioimg,
+    .portfolio2img,
+    .smartimg {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .p-des {
+        width: 100%;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+    .portalh1 {
+        margin: 25px 0 10px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .portaltitle {
+        margin: 10px 0 20px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .project-p {
+        margin: 10px 15px 25px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 10px 0 25px;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .key {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .c-btn {
+        margin: 25px auto;
+    }
+
+
+    .Education {
+        width: calc(100% - 30px);
+        margin: 50px auto;
+        padding: 20px 15px;
+    }
+
+    .heading-education {
+        font-size: 38px;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .education-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .education-box {
+        width: 100%;
+        margin: 15px 0;
+        padding: 18px;
+    }
+
+    .education-box h2 {
+        font-size: 20px;
+    }
+
+    .education-box p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .user-box {
+        width: calc(100% - 40px);
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .user-box form {
+        width: 100%;
+    }
+
+    .usermesg {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    textarea.usermesg {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        margin-top: 50px;
+        padding: 20px 15px;
+    }
+
+    .footer p {
+        font-size: 13px;
+        margin: 5px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .intro {
+        font-size: 18px;
+    }
+
+    .hed {
+        font-size: 24px;
+    }
+
+    .i-p {
+        font-size: 14px;
+    }
+
+    .rambo2 {
+        width: 95%;
+    }
+
+    .a-m,
+    .myskill,
+    .myproject {
+        font-size: 32px;
+    }
+
+    .skill-container {
+        gap: 12px;
+        padding: 0 12px;
+    }
+
+    .skill-box {
+        height: 140px;
+        max-width: 140px;
+    }
+
+    .html {
+        width: 55px;
+        height: 55px;
+    }
+
+    .project-box {
+        width: calc(100% - 20px);
+        padding: 10px;
+    }
+
+    .portaltitle {
+        font-size: 20px;
+    }
+
+    .heading-education {
+        font-size: 32px;
+    }
+}
